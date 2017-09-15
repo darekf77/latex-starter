@@ -1,0 +1,175 @@
+\documentclass[a4paper,width=150mm,top=25mm,bottom=25mm]{report}
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.5.2
+% see http://writer2latex.sourceforge.net for more info
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{dirtytalk}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage[english,polish]{babel}
+\let\lll\undefined
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+
+\usepackage{algpseudocode}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered]{algorithm2e}
+\newcommand{\listofalgorithmes}{\tocfile{\listalgorithmcfname}{loa}}
+
+% listing and licluding source code from files;
+
+% \setmonofont{Consolas} %to be used with XeLaTeX or LuaLaTeX
+\definecolor{bluekeywords}{rgb}{0,0,1}
+\definecolor{greencomments}{rgb}{0,0.5,0}
+\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
+\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
+\definecolor{types}{rgb}{0.17,0.57,0.68}
+\usepackage{listings}
+\lstset{language=[Sharp]C,
+captionpos=b,
+%numbers=left, %Nummerierung
+%numberstyle=\tiny, % kleine Zeilennummern
+frame=lines, % Oberhalb und unterhalb des Listings ist eine Linie
+showspaces=false,
+showtabs=false,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+escapeinside={(*@}{@*)},
+commentstyle=\color{greencomments},
+morekeywords={partial, var, value, get, set},
+keywordstyle=\color{bluekeywords},
+stringstyle=\color{redstrings},
+basicstyle=\ttfamily\small,
+}
+\usepackage{xcolor}
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
+% EXAMPLE OF LISTING CODE
+% \lstset{style=sharpc}
+% \begin{lstlisting}
+%     int colorPixelIndex = 0;
+%     c# code
+% \end{lstlisting}
+
+% \lstinputlisting[language=c, caption=a test for a C$^\sharp$ code ]{code/depth_short_to_rgba.cs}
+
+
+
+\usepackage[nottoc]{tocbibind} %bibliography
+% \usepackage{biblatex}
+% \addbibresource{books.bib}
+
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=Dariusz Filipiak, pdfsubject=, pdfkeywords=}
+\usepackage[pdftex]{graphicx}
+% footnotes configuration
+\makeatletter
+\renewcommand\thefootnote{\arabic{footnote}}
+\makeatother
+% Outline numbering
+\setcounter{secnumdepth}{0}
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{0.4917in}
+\setlength\oddsidemargin{0.9839in}
+\setlength\textheight{8.818899in}
+\setlength\textwidth{6.3002996in}
+\setlength\footskip{0.9453in}
+\setlength\headheight{0.4925in}
+\setlength\headsep{0.4528in}
+% Footnote rule
+\setlength{\skip\footins}{0.0469in}
+\renewcommand\footnoterule{\vspace*{-0.0071in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.0071in}}\vspace*{0.0398in}}
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{ \raggedleft{\tiny Załącznik nr 1 do komunikatu dziekana WFAIS UJ nr 1/2015}}
+  \renewcommand\@evenhead{\@oddhead}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{\@oddfoot}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+
+% Non-floating captions
+\makeatletter
+\newcommand\captionof[1]{\def\@captype{#1}\caption}
+\makeatother
+\newcounter{Ilustracja}
+\renewcommand\theIlustracja{\arabic{Ilustracja}}
+
+
+\newcommand*\wildcard[2][5cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% \rhead{ {\color{lightgray}\bf {\scriptsize Załącznik nr 1 do komunikatu dziekana WFAIS UJ nr 1 2015}}}
+% \lhead{Guides and tutorials}
+\rfoot{Your City 2017}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{import}
+
+% capitalize first letter
+% \titlecap{first letters are upper case or lower case, etc.}
+\usepackage{titlecaps}
+
+\usepackage[rightcaption]{sidecap}
+
+\usepackage{standalone} 
+\usepackage{wrapfig} % for wrapping images with text
+
+\usepackage{blindtext}
+\usepackage{tasks} % for lists a) b) c) ...
+
+\usepackage{nomencl}
+\makenomenclature
+
+% nice inputs VerbatimInput(data.txt)
+  \usepackage{verbatim}
+  % like this \verbatiminput{./chapters/intro/test.txt}
+
+\graphicspath{ {/Users/darek/ProjectsMac/juggling_game_web/_master_thesis/} }
+
+% source for image
+\newcommand*{\captionsource}[2]{%
+\caption[{#1}]{%
+  #1%
+  \\\hspace{\linewidth}%
+  \footnotesize{\textbf{Źródło:} #2}%
+}%
+}
+
+% footnotes in tables
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+
+% QUICK_FIX algorithms list in english
+\renewcommand*\listalgorithmcfname{Lista algorytmów}
+
+% glossary
+\usepackage{setspace}
+\usepackage{siunitx,textgreek} % ,,
+\usepackage[toc,acronym,indexonlyfirst,nogroupskip,shortcuts]{glossaries}
+\glstoctrue
+\makeglossaries
+
+% glossary specific surfix
+\import{./}{pages/terms_suffixes}
+% glosary terms
+\import{./}{pages/terms}
+\import{./}{pages/shortcuts}
+
+\begin{document}
+
+
+\newcommand{\akapit}{\ \ \ \ \ \ }
+
+\import{./}{layout}
+
+\end{document}
+
+

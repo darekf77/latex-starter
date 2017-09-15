@@ -1,0 +1,54 @@
+{
+    "files.exclude": {
+        "node_modules": true,
+        "dirtytalk*": true,
+        "dist": true,
+        ".gitignore": true,
+        "package.json": true,
+        ".vscode": false,
+        "**/*.lol": true,
+        // "build*": true,
+        "**/*.log": true,
+        "**/*.loa": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.lof": true,
+        "**/*.lot": true,
+        "**/*.nlo": true,
+        "**/*.out": true,
+        "**/*.aux": true,
+        "**/*.synctex*": true,
+        "**/*.toc": true,
+        "**/*.glo": true,
+        "**/*.glg": true,
+        "**/*.alg": true,
+        "**/*.acn": true,
+        "**/*.acr": true,
+        "**/*.gls": true,
+        "**/*.glsdefs": true,
+        "**/*.ist": true,
+        "**/_.tex": false,
+        "main.pdf": true
+    },
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "editor.minimap.enabled": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "TodoParser": {
+        "include": [
+            "tex"
+        ],
+        "only": [
+            "chapters",
+            "pages"
+        ],
+        "showInProblems": true,
+        "autoDefaultMarkers": true
+    },
+    "editor.parameterHints": false
+}
