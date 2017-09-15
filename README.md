@@ -1,6 +1,8 @@
 Latex Starter (beta)
 ===================
 
+![ ](latex.jpg)
+
 **Latex starter**  -  dont't wait.. start your master thesis in latex today
 and keep nice structure of project.
 
