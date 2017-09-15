@@ -30,7 +30,7 @@ and keep nice structure of project.
 
  1. Clone  project: `git clone https://github.com/darekf77/latex-starter.git`
  2. Open **latex-starter** forlder with **Visual Studio Code**.
- 3. Ooptional step) Go to *Extensions* / *Show Workspace Recommended Extensions* and click install for all of them.
+ 3. (optional step) Go to *Extensions* / *Show Workspace Recommended Extensions* and click install for all of them.
  3. Build sample project:
 	 -   `ctrl + shift + b`   Windows, Linux
 	 -   `cmd + shift + b`   MacOS
