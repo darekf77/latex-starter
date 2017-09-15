@@ -6,19 +6,19 @@ and keep nice structure of project.
 
 # Features
 
- - structure prepare eve forn big thesis
+ - structure prepared even for big thesis
  - cross platform (Mac OSX, Windows, Linux)
  - build with shortcut in  Visual Studio Code:
     -   `ctrl + shift + b`   Windows, Linux
 	-   `cmd + shift + b`   MacOS
 
  - **Bibtex** - keep bibliography in source.bib
- - **Glossaries** - list acronmyms and glocaries
+ - **Glossaries** - list of acronmyms and glocaries
  - **Poslish** characters supported (ąęółźźńć)
 
 # Requirements 
 
-###All platforms:
+### All platforms:
  1. Mitex 2.9 - (https://miktex.org/download
  2. Git for [Windows](https://git-scm.com/download/win), [MacOSX, Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
  2. [Visual Studio Code](https://code.visualstudio.com/download)
