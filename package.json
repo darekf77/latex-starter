@@ -1,19 +1,31 @@
 {
-    "name": "latex-starter",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+  "tnp": {
+    "resources": [],
+    "type": "navi",
+    "overrided": {
+      "linkedFolders": [],
+      "ignoreDepsPattern": [
+        "*"
+      ],
+      "includeAsDev": [],
+      "includeOnly": [],
+      "dependencies": {}
     },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@bitbucket.org/kinectis/_master_thesis.git"
-    },
-    "author": "Dariusz Filipiak",
-    "license": "ISC",
-    "homepage": "https://bitbucket.org/kinectis/_master_thesis#readme",
-    "dependencies": {
-        "rimraf": "^2.6.1"
+    "linkedProjects": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false
     }
+  },
+  "name": "latex-starter",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kinectis/_master_thesis.git"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.1"
+  },
+  "devDependencies": {}
 }
