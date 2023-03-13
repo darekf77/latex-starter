@@ -1,23 +1,4 @@
 {
-  "tnp": {
-    "resources": [],
-    "type": "navi",
-    "overrided": {
-      "linkedFolders": [],
-      "ignoreDepsPattern": [
-        "*"
-      ],
-      "includeAsDev": [],
-      "includeOnly": [],
-      "dependencies": {}
-    },
-    "linkedProjects": [],
-    "libReleaseOptions": {
-      "nodts": false,
-      "obscure": false,
-      "ugly": false
-    }
-  },
   "name": "latex-starter",
   "version": "1.0.0",
   "repository": {
